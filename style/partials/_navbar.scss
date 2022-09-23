@@ -1,0 +1,34 @@
+.logo {
+    width: 90px;
+}
+
+.offcanvas {
+    background: url(../../resources/img/background/background_menu.svg);
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: end !important;
+    a {
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .offcanvas {
+        background: none;
+    }
+
+    .icon_menu, .icon_close {
+        display: none;
+    }
+
+    .offcanvas-header {
+        display: none !important;
+    }
+
+    .offcanvas-body {
+        justify-content: end;
+    }
+}

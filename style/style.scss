@@ -1,0 +1,16 @@
+@import '../node_modules/bootstrap/scss/bootstrap',
+        './partials/navbar',
+        './partials/extends',
+        './partials/index';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  @extend %background_config;
+
+  @media screen and (max-width: 425px) {
+    background: url(../resources/img/background/background_1.svg);   
+  }
+}
