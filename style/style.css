@@ -10770,7 +10770,7 @@ textarea.form-control-lg {
 }
 
 .offcanvas {
-  background: url(../../resources/img/background/background_menu.svg);
+  background: url("/resources/img/background/background_menu.svg");
 }
 
 .nav-item {
