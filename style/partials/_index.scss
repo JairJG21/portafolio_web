@@ -2,29 +2,80 @@ html {
     font-size: 20px;
 }
 
-.nombre_principal {
+.titulo_principal {
     color: rgb(255, 255, 255);
     font-family: secundaria_font;
-    font-size: 3em;
+    font-size: 20vw;
     margin: 0;
 }
 
-.apellido_principal {
+.subtitulo_principal {
     color: rgb(255, 255, 255);
     font-family: secundaria_font;
-    font-size: 2em;
+    font-size: 12vw;
     margin: 0;
+    text-align: center;
 }
 
 .ocupacion_principal {
     color: rgb(255, 255, 255);
     font-family: secundaria_font;
-    font-size: 1em;
+    font-size: 7vw;
     margin: 0;
 }
-
-.img_mia_1 {
-    position: absolute;
-    top: 35vh;
-    left: 0;
+.parrafo_principal {
+    color: rgb(255, 255, 255);
+    font-size: 4vw;
+    margin: 0;
+    text-align: center;
 }
+
+.icon_tecnologias {
+    width: 30vw;
+}
+
+.card-title {
+    font-size: 8vw;
+}
+
+.card-text {
+    font-size: 4vw;
+}
+
+.btn_proyecto {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    &:focus, &:hover {
+        color: #fff;
+    }
+
+    &:focus:after, &:hover:after {
+        width: 100%;
+        left: 0;
+    }
+
+    &:after {
+        content: "";
+        pointer-events: none;
+        bottom: -2px;
+        left: 50%;
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background-color: #fff;
+        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+        transition-duration: 400ms;
+        transition-property: width, left;  
+    }
+  }
